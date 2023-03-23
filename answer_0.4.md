@@ -7,7 +7,7 @@ sequenceDiagram
     
     activate user
     note right of user: Enter new node information
-    user->>browser: Submit form with new node information
+    user->>browser: Submit form with action = "/new_note"
     deactivate user
     
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
